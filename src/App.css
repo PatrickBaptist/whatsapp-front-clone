@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e2e1de;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.back-ground {
+  background-color: #00a884;
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chat-container {
+  width: 95%;
+  max-width: 1700px;
+  height: 95%;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chat-contacts {
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid #e6e6e6;
+}
+
+.chat-item {
+  box-sizing: border-box;
+  padding: 10px;
+  border-top: 1px solid #f0f2f5;
+  border-bottom: 1px solid #f0f2f5;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title-chat-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.image-profile {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.title-message {
+  font-size: 12px;
+}
+
+.last-message {
+  color: #808080;
+}
+
+.chat-options {
+  width: 100%;
+  height: 80px;
+  background-color: #f0f2f5;
+}
+
+.chat-messages {
+  flex: 1;
+  background-image: url('./assets/fundo.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-messages-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8c8c8c;
+  border-radius: 20px;
+}
+
+.chat-input-area {
+  width: 100%;
+  height: 70px;
+  background-color: #f0f2f5;
+  box-sizing: border-box;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.chat-input {
+  width: 90%;
+  background-color: #fff;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 4px;
+  font-size: 16px;
+}
+
+.send-message-icon {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+.user-container-message {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 2px 0;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.user-my-message {
+  background-color: #d9fdd3;
+  padding: 10px;
+  border: 5px;
+}
+
+.user-other-message {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.container-login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #00a884 150px, #e2e1de 0);
+}
+
+.content-login {
+  width: 50%;
+  height: 500px;
+  background-color: #686868;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.span-login {
+  color: #cacaca;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-login {
+  width: 250px;
+  height: 20px;
+  background-color: #00a8a838;
+  color: #b9b9b9;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #00a884;
+}
+
+input::placeholder { 
+  color: #cacaca;
+}
+
+.button-login {
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: #00a884;
+  cursor: pointer;
 }
