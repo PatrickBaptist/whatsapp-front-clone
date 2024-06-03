@@ -96,10 +96,20 @@ function App() {
         onKeyDown={(e) => {
           if(e.key === 'Enter') {
             handleJoin()
+            alert("abrir em navegador sem cors")
           }
         }}
         />
-        <button className='button-login' onClick={() => handleJoin()}>Entrar</button>
+        <button 
+        className='button-login'
+        onClick={() => {
+          handleJoin()
+          alert("abrir em navegador sem cors")
+        }}
+        >
+          Entrar
+        </button>
+
       </div>
     </div>
     )

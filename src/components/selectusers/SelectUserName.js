@@ -35,12 +35,12 @@ function SelectUser ({ users, lastMessages, currentUserId, setOpenMenu, openMenu
     return (
         <div className={`contacts-container ${openMenu ? 'contacts-container-collapsed' : 'contacts-container-expanded'}`}>
             <div className='you'>
-                <img src={IconAnonimo} alt='' className='image-profile' style={ openMenu ? {display: "none"} : {display: "block"} } />
+                <img src={Hamburguer} alt='menu' className='hamburguer' onClick={MenuClick} />
                 <div className='you-content' style={ openMenu ? {display: "none"} : {display: "flex"} }>
                         <b>VOCÊ</b>
                         <span>({name})</span>
                 </div>
-                <img src={Hamburguer} alt='menu' className='hamburguer' onClick={MenuClick} />
+                <img src={IconAnonimo} alt='' className='image-profile' style={ openMenu ? {display: "none"} : {display: "block"} } />
             </div>
             <div className='contacts-content'>
             {sortedUsers

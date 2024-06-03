@@ -68,7 +68,7 @@
 }
 
 .input-login {
-  width: 250px;
+  width: 50%;
   height: 20px;
   background-color: #00a8a838;
   color: #b9b9b9;
@@ -88,4 +88,10 @@ input::placeholder {
   border: none;
   background-color: #00a884;
   cursor: pointer;
+}
+
+@media (max-width: 530px)  {
+  .input-login {
+    width: 80%;
+  }
 }
